@@ -2,7 +2,7 @@
 <?php require_once "../app/Views/Components/navbar.php"; ?>
 
 
-<div class="h-screen content-center items-center grid bg-gradient-to-r from-blue-200 from-20% via-gray-100 via%60 to-blue-300 bg-cover bg-no-repeat backdrop-blur-2xl bckdrop-rounded-3xl" >
+<div class="h-screen content-center items-center grid bg-gradient-to-r from-gray-800 from-20% via-gray-700 via%60 to-gray-600 bg-cover bg-no-repeat backdrop-blur-2xl bckdrop-rounded-3xl" >
     <div class="container mx-auto w-4/12  ">
     <div class="backdrop-blur-xl p-4 bg-white/30 shadow-inner shadow-xl ...">
         <div class="text-center mb-8">

@@ -3,7 +3,7 @@
 
 // Pārbaude, vai ir norādīts projekta ID
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['project_id'])) {
-    require_once "../app/Models/project.php";
+    require_once "../app/Models/projects.php";
     $projectModel = new projectModel();
 
     // Iegūstam projekta ID no formas

@@ -6,6 +6,7 @@
 
 return [
     '/' => '../app/Controllers/index.php',
+    '/about'  => '../app/Views/about.view.php',
     '/user/login' => '../app/Controllers/user/login.php',
     '/user/register' => '../app/Controllers/user/register.php',
     '/user/logout' => '../app/Controllers/user/logout.php',

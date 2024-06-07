@@ -1,7 +1,7 @@
 <?php
 $title = "Project/Create";
 
-require_once "../app/Models/project.php";
+require_once "../app/Models/reservation.php";
 
 $errors = [];
 
@@ -29,10 +29,10 @@ if (isset($_SESSION['user'])) {
             if (empty($errors)) {
                 $projectModel = new projectModel;
                 $projectModel->createProject($userID, $title, $description);
-                header("Location: /project");
+                header("Location: /projects");
                 exit; // Pārliecināsimies, ka turpmāka koda izpildīšana tiek pārtraukta
             }else{
-                header("Location: /project");
+                header("Location: /projects");
                 exit; // Pārliecināsimies, ka turpmāka koda izpildīšana tiek pārtraukta
             }
         }
@@ -42,6 +42,6 @@ if (isset($_SESSION['user'])) {
 } else {
     header("Location: /");
 }
-require_once "../app/Views/project/index.view.php";
+require_once "../app/Views/reservation/index.view.php";
 ?>
 
